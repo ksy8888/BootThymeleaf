@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style type="text/css">
+
+</style>
+</head>
+<body>
+<div class="wrapper row3" style="height: 433px;">
+  <main class="container clear"> 
+  <div style="height:40px;"></div>
+    <h2 class="sectiontitle" style="text-align: center;">삭제하기</h2>
+    <form method="post" action="/board/board_delete_ok">
+      <table class="table">
+        <tr>
+         <td class="text-center inline">
+           비밀번호:<input type=password name=pwd size=15 class="input-sm">
+           <input type=hidden name=no th:value="${no}">
+         </td>
+        </tr>
+        <tr>
+         <td class="text-center inline">
+           <button class="btn-sm btn-danger">삭제</button>
+           <input type=button class="btn-sm btn-primary" value="취소" onclick="javascript:history.back()">
+         </td>
+        </tr>
+      </table>
+      </form>
+  </main>
+</div>  
+</body>
+</html>
